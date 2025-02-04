@@ -1,4 +1,4 @@
-# Gyros Értékelő Weboldal
+# Gyros tesók
 
 ## 📖 Projekt háttér
 
