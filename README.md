@@ -18,8 +18,11 @@ Középiskolás éveink alatt gyakran jártunk gyrosozni, és arra gondoltunk, m
 - **Top listák** 🏆
   - A legjobb helyek rangsorolása a saját értékeléseink alapján.
 
-- **Admin felület** 🔧
+- **Cikk létrehozása** 🔧
   - Új helyek felvétele, meglévő értékelések szerkesztése.
+  
+- **Akadálymentesség** ♿
+  - Az oldal kialakításánál figyelembe vettük az akadálymentes hozzáférhetőséget, hogy minden felhasználó számára könnyen használható legyen.
 
 ## 🛠️ Használt technológiák
 
@@ -27,11 +30,8 @@ Középiskolás éveink alatt gyakran jártunk gyrosozni, és arra gondoltunk, m
 - **Backend:** PHP, MySQL
 - **Térképes megjelenítés:** Google Maps API / OpenStreetMap
 
-## 📌 Továbbfejlesztési lehetőségek
-
-- Reszponzív design mobilos felhasználók számára
-- Képek feltöltése az értékelésekhez
-- Keresési és szűrési funkciók fejlesztése
+űrési funkciók fejlesztése
 
 ## 📢 Összegzés
-Ez a projekt egy szórakoztató és informatív platform, ahol mi, a szerkesztők, folyamatosan próbáljuk és értékeljük a gyrosozókat, segítve ezzel másokat a legjobb helyek megtalálásában. 🎉
+
+Ez a projekt egy szórakoztató és informatív platform, ahol teszteljük és értékeljük a gyrosozókat, hogy segítsünk másoknak megtalálni a legjobb helyeket 🎉
