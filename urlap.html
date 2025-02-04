@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gyros tesók - Űrlap</title>
+  <link rel="shortcut icon" href="icons/gyrosicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="print" href="css/print.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="shadow">
+    <nav id="tothecontent">
+      <h2 class="hide">Ugrás az oldalon belül</h2>
+      <a class="links" href="#content" tabindex="1">Ugrás a tartalomra</a>
+    </nav>
+    <div class="maxwidth-1200">
+      <div class="left padding-16 btn" onfocus="openNavbar()" tabindex="2" role="button">☰</div>
+      <div class="right padding-16">Űrlap</div>
+      <div class="center padding-16">
+        <h1>Gyros tesók<img alt="Gyros tesók logo" class="gyrosicon" src="icons/gyros.png"></h1>
+      </div>
+    </div>
+    <!-- Sidebar  -->
+    <nav class="sidenav shadow top animation" id="mySidebar">
+      <a href="javascript:void(0)" onclick="closeNavbar()" class="btn">Bezárás &times;</a>
+        <a href="index.html" onclick="w3_close()" class="btn">Főoldal</a>
+      <a href="index.html#contact" onclick="closeNavbar()" class="btn">Lépj kapcsolatba velünk</a>
+      <a href="gyrosaholeddig.html" onclick="closeNavbar()" class="btn">Helyek ahol eddig jártunk</a>
+      <a href="gyrostortenelem.html" onclick="closeNavbar()" class="btn">Gyros történelem</a>
+      <a href="urlap.html" onclick="closeNavbar()" class="btn">Új cikk készítése</a>
+      <a class="hide" href="" onfocus="closeNavbar()">Automatikus kilépés tabulátorral</a>
+    </nav>
+  </header>
+
+  <!--Content-->
+  <main id="content">
+    <div class="padding-32 contact">
+      <div class="email">
+        <h2 class="center"><b>Új cikk készítése</b></h2>
+        <form class="contact-form" action="mailto:riszticsadam@gmail.com" method="post" accept-charset="UTF-8">
+          <fieldset>
+            <label for="hely">A hely neve</label>
+            <input type="text" name="helyneve" placeholder="A hely neve" id="hely" size="64" required>
+          </fieldset>
+          <fieldset>
+            <label for="kritika">A kritika</label>
+            <textarea name="akritika" placeholder="A kritika" id="kritika" maxlength="2000" rows="20" cols="30" required></textarea>
+          </fieldset>
+          <fieldset>
+            <label for="osszegzo">A rövid összegző</label>
+            <textarea name="azosszegzo" placeholder="A rövid összegző" id="osszegzo"  maxlength="300" rows="5" cols="30" required></textarea>
+          </fieldset>
+          <fieldset>
+            <label>Ár</label>
+            <div class="rate">
+              <input type="radio" id="arcsillag10" name="arertekeles" value="10">
+              <label for="arcsillag10" title="text">10 csillag</label>
+              <input type="radio" id="arcsillag9" name="arertekeles" value="9">
+              <label for="arcsillag9" title="text">9 csillag</label>
+              <input type="radio" id="arcsillag8" name="arertekeles" value="8">
+              <label for="arcsillag8" title="text">8 csillag</label>
+              <input type="radio" id="arcsillag7" name="arertekeles" value="7">
+              <label for="arcsillag7" title="text">7 csillag</label>
+              <input type="radio" id="arcsillag6" name="arertekeles" value="6">
+              <label for="arcsillag6" title="text">6 csillag</label>
+              <input type="radio" id="arcsillag5" name="arertekeles" value="5">
+              <label for="arcsillag5" title="text">5 csillag</label>
+              <input type="radio" id="arcsillag4" name="arertekeles" value="4">
+              <label for="arcsillag4" title="text">4 csillag</label>
+              <input type="radio" id="arcsillag3" name="arertekeles" value="3">
+              <label for="arcsillag3" title="text">3 csillag</label>
+              <input type="radio" id="arcsillag2" name="arertekeles" value="2">
+              <label for="arcsillag2" title="text">2 csillag</label>
+              <input type="radio" id="arcsillag1" name="arertekeles" value="1" checked>
+              <label for="arcsillag1" title="text">1 csillag</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <label>Kiszolgálás</label>
+            <div class="rate">
+              <input type="radio" id="kiszolgalascsillag10" name="kiszolgalasertekeles" value="10">
+              <label for="kiszolgalascsillag10" title="text">10 csillag</label>
+              <input type="radio" id="kiszolgalascsillag9" name="kiszolgalasertekeles" value="9">
+              <label for="kiszolgalascsillag9" title="text">9 csillag</label>
+              <input type="radio" id="kiszolgalascsillag8" name="kiszolgalasertekeles" value="8">
+              <label for="kiszolgalascsillag8" title="text">8 csillag</label>
+              <input type="radio" id="kiszolgalascsillag7" name="kiszolgalasertekeles" value="7">
+              <label for="kiszolgalascsillag7" title="text">7 csillag</label>
+              <input type="radio" id="kiszolgalascsillag6" name="kiszolgalasertekeles" value="6">
+              <label for="kiszolgalascsillag6" title="text">6 csillag</label>
+              <input type="radio" id="kiszolgalascsillag5" name="kiszolgalasertekeles" value="5">
+              <label for="kiszolgalascsillag5" title="text">5 csillag</label>
+              <input type="radio" id="kiszolgalascsillag4" name="kiszolgalasertekeles" value="4">
+              <label for="kiszolgalascsillag4" title="text">4 csillag</label>
+              <input type="radio" id="kiszolgalascsillag3" name="kiszolgalasertekeles" value="3">
+              <label for="kiszolgalascsillag3" title="text">3 csillag</label>
+              <input type="radio" id="kiszolgalascsillag2" name="kiszolgalasertekeles" value="2">
+              <label for="kiszolgalascsillag2" title="text">2 csillag</label>
+              <input type="radio" id="kiszolgalascsillag1" name="kiszolgalasertekeles" value="1" checked>
+              <label for="kiszolgalascsillag1" title="text">1 csillag</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <label>Íz</label>
+            <div class="rate">
+              <input type="radio" id="izcsillag10" name="izertekeles" value="10">
+              <label for="izcsillag10" title="text">10 csillag</label>
+              <input type="radio" id="izcsillag9" name="izertekeles" value="9">
+              <label for="izcsillag9" title="text">9 csillag</label>
+              <input type="radio" id="izcsillag8" name="izertekeles" value="8">
+              <label for="izcsillag8" title="text">8 csillag</label>
+              <input type="radio" id="izcsillag7" name="izertekeles" value="7">
+              <label for="izcsillag7" title="text">7 csillag</label>
+              <input type="radio" id="izcsillag6" name="izertekeles" value="6">
+              <label for="izcsillag6" title="text">6 csillag</label>
+              <input type="radio" id="izcsillag5" name="izertekeles" value="5">
+              <label for="izcsillag5" title="text">5 csillag</label>
+              <input type="radio" id="izcsillag4" name="izertekeles" value="4">
+              <label for="izcsillag4" title="text">4 csillag</label>
+              <input type="radio" id="izcsillag3" name="izertekeles" value="3">
+              <label for="izcsillag3" title="text">3 csillag</label>
+              <input type="radio" id="izcsillag2" name="izertekeles" value="2">
+              <label for="izcsillag2" title="text">2 csillag</label>
+              <input type="radio" id="izcsillag1" name="izertekeles" value="1" checked>
+              <label for="izcsillag1" title="text">1 csillag</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <label>Képek száma</label>
+            <div class="radiocheck">
+              <input type="radio" id="haromkep" name="picture" value="3">
+              <label for="haromkep" title="text">3</label>
+              <input type="radio" id="ketkep" name="picture" value="2">
+              <label for="ketkep" title="text">2</label>
+              <input type="radio" id="egykep" name="picture" value="1" checked>
+              <label for="egykep" title="text">1</label>  
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="radiocheck">
+              <input type="checkbox" id="beleegyezem" name="beleegyezemhogymegjelenjen" value="beleegyezem" required>
+              <label for="beleegyezem" title="text">Beleegyezem, hogy a cikk megjelenjen a weblapon</label>
+            </div>
+          </fieldset>
+          <fieldset class="btns">
+            <button type="reset" name="delete" class="btn delete">Törlés</button>
+            <button type="submit" name="submit" class="btn send">Küldés</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="row-padding padding-32 maxwidth-1200 margin-top">
+    <hr>
+    <div class="third">
+      <h3>Rólunk</h3>
+      <p><i>Hivatásunk az embereknek útmutatást nyújtani a gyrosozók között. Először hobbinak indult, mára feltörekvő
+          egyéni vállalkozás lett. Két jóbarát, gyros fanatikus, szakújságíró véleményei a budapesti
+          gyorséttermekről.</i></p>
+    </div>
+    <div class="third">
+      <h3>A BLOG SZERKESZTŐI</h3>
+      <ul>
+        <li>
+          <img alt="Egy kép Ádámról, az egyik szerkesztőről" src="icons/adam.jpg" class="left">
+          <span class="font-18">Ádám</span><br>
+          <span><i>"Paradicsomot nem kérek bele köszönöm!"</i></span>
+        </li>
+        <li>
+          <img alt="Egy kép Nándóról, a másik szerkesztőről" src="icons/nando.jpg" class="left">
+          <span class="font-18">Nándó</span><br>
+          <span class="nando"><i>"Célom a tökéletes harmónia megtalálása, a lehető legalacsonyabb áron."</i></span>
+        </li>
+      </ul>
+    </div>
+    <div class="third">
+      <h3>TAGEK</h3>
+      <aside>
+        <span class="tag">Gyros</span>
+        <span class="tag smaller">Budapest</span>
+        <span class="tag smaller">Pita</span>
+        <span class="tag smaller">Saláta</span>
+        <span class="tag smaller">Csirke</span>
+        <span class="tag smaller">Öntetek</span>
+        <span class="tag smaller">Paradicsom</span>
+        <span class="tag smaller">Hagyma</span>
+        <span class="tag smaller">Uborka</span>
+        <span class="tag smaller">Tzatziki</span>
+        <span class="tag smaller">Görög</span>
+        <span class="tag smaller">Csípős szósz</span>
+        <span class="tag smaller">Lilakáposzta</span>
+        <span class="tag smaller">Marha</span>
+      </aside>
+    </div>
+  </footer>
+  <footer class="bottom">
+    <a href="https://www.facebook.com/gyrostesok/" target="_blank"  class="fa fa-facebook-official"></a>
+    <a href="https://www.instagram.com/gyros_tesok/" target="_blank"  class="fa fa-instagram"></a>
+  </footer>
+</body>
+
+</html>
